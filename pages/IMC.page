@@ -1,0 +1,23 @@
+<apex:page showHeader="false" applyHtmlTag="false" cache="false">
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <apex:includeLightning />
+            <script>
+                $Lightning.use("c:IMCApp", function() {
+                  $Lightning.createComponent("c:calculator",
+                      {  },
+                      "calculatorContainer",
+                      function(cmp) { }
+                  );
+                });
+            </script>
+        </head>
+        <body>
+            <div style="max-width: 380px; margin: auto;padding-top: 10px">
+                <div id='calculatorContainer'/>
+            </div>
+        </body>
+    </html>
+</apex:page>

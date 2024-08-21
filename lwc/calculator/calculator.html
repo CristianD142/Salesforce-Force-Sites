@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-theme_default slds-box">
+        <div>
+            <h1>IMC Calculator</h1>
+        </div>
+        <div>
+            <lightning-input type="number" name="weight" label="Weight (kg)"  onchange={handleWeightChange}></lightning-input>
+            <lightning-input type="number" name="height" label="Height (cm)" onchange={handleHeightChange}></lightning-input>
+        </div>
+        <div>
+            Result : {result}
+        </div>
+    </div>
+</template>
